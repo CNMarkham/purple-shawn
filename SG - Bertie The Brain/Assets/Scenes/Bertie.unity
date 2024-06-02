@@ -206,7 +206,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 2055053544}
         m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
         m_MethodName: ButtonClicked
         m_Mode: 2
@@ -473,7 +473,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 2055053544}
         m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
         m_MethodName: ButtonClicked
         m_Mode: 2
@@ -804,7 +804,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 2
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_BackGroundColor: {r: 0, g: 0, b: 0, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -1211,7 +1211,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 2055053544}
         m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
         m_MethodName: ButtonClicked
         m_Mode: 2
@@ -1546,7 +1546,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 2055053544}
         m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
         m_MethodName: ButtonClicked
         m_Mode: 2
@@ -1679,7 +1679,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 2055053544}
         m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
         m_MethodName: ButtonClicked
         m_Mode: 2
@@ -1946,7 +1946,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 2055053544}
         m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
         m_MethodName: ButtonClicked
         m_Mode: 2
@@ -2481,7 +2481,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 2055053544}
         m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
         m_MethodName: ButtonClicked
         m_Mode: 2
@@ -2560,7 +2560,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20ed0817edf528842b08593434c5c426, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  buttons: []
+  buttons:
+  - {fileID: 1440908832}
+  - {fileID: 154703560}
+  - {fileID: 326827623}
+  - {fileID: 1491922295}
+  - {fileID: 1914139691}
+  - {fileID: 970813144}
+  - {fileID: 1582293116}
+  - {fileID: 2058853262}
+  - {fileID: 2126954417}
   results: {fileID: 0}
 --- !u!4 &2055053545
 Transform:
@@ -2660,7 +2669,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 2055053544}
         m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
         m_MethodName: ButtonClicked
         m_Mode: 2
@@ -2793,7 +2802,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 2055053544}
         m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
         m_MethodName: ButtonClicked
         m_Mode: 2
