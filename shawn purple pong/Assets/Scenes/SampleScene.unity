@@ -134,8 +134,9 @@ GameObject:
   - component: {fileID: 20952273}
   - component: {fileID: 20952272}
   - component: {fileID: 20952274}
+  - component: {fileID: 20952275}
   m_Layer: 0
-  m_Name: Square (1)
+  m_Name: player2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -253,6 +254,18 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &20952275
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 20952271}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5dd76faf1540dec418da8ce1724398ed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &304286819
 GameObject:
   m_ObjectHideFlags: 0
@@ -564,8 +577,9 @@ GameObject:
   - component: {fileID: 1653172602}
   - component: {fileID: 1653172601}
   - component: {fileID: 1653172603}
+  - component: {fileID: 1653172604}
   m_Layer: 0
-  m_Name: Square
+  m_Name: player1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -683,11 +697,24 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &1653172604
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1653172600}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f6e738e8e6057fe4ab4a6e267f8c5eaf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 8
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
   - {fileID: 519420032}
   - {fileID: 304286821}
-  - {fileID: 1653172602}
   - {fileID: 20952273}
+  - {fileID: 1653172602}
