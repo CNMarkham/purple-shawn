@@ -9,13 +9,13 @@ public class player : MonoBehaviour
     void Update()
     {
         if (Input.GetKey(KeyCode.RightArrow))
-            // vector2 , speed, trsndlste
         {
             transform.Translate(Vector2.right * Time.deltaTime * speed);
         }
+
         if (Input.GetKey(KeyCode.LeftArrow))
         {
-            transform.Translate(Vector2.left * Time.deltaTime * speed); 
+            transform.Translate(Vector2.left * Time.deltaTime * speed);
         }
     }
 }
