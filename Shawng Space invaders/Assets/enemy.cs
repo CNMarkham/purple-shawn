@@ -13,6 +13,7 @@ public class enemy : MonoBehaviour
     void Start()
     {
         animator = GetComponent<Animator>();
+        direction = Vector2.right;
     }
 
     // Update is called once per frame
@@ -21,14 +22,16 @@ public class enemy : MonoBehaviour
     {
         transform.Translate(direction * Time.deltaTime * speed);
 
-        if (transform.position.x > 8f)
+        if (transform.position.x > 12f)
         {
             direction = Vector2.left;
+            MoveDown();
         }
 
-        if (transform.position.x < -8f)
+        if (transform.position.x < -12f)
         {
             direction = Vector2.right;
+            MoveDown();
         }
     }
     private void OnCollisionEnter2D(Collision2D collision)
@@ -37,4 +40,15 @@ public class enemy : MonoBehaviour
         Destroy(gameObject,1f);
         Destroy(collision.gameObject);
     }
+
+
+    private void MoveDown()
+    {
+        foreach (enemy enemy in FindObjectsOfType(typeof(enemy)))
+        {
+            enemy.transform.Translate(Vector2.down *0.5f);
+        }
+    }
 }
+
+
