@@ -16,9 +16,10 @@ public class gamemanager : MonoBehaviour
             Instantiate(brickPrefab, new Vector2(x * xSpace + xOffset, 3), Quaternion.identity);
             Instantiate(brickPrefab, new Vector2(x * xSpace + xOffset, 3.75f), Quaternion.identity);
             Instantiate(brickPrefab, new Vector2(x * xSpace + xOffset, 4.5f), Quaternion.identity);
+            //it is used to cloneing the object bthat is being cloned  ppositsoning the clones, the rotatuon of the clones
         }
 
 
-
+      
     }
 }

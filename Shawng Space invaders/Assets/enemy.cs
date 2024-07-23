@@ -8,7 +8,7 @@ public class enemy : MonoBehaviour
     private Animator animator;
     public float speed;
    static private Vector2 direction;
-
+    //stactic is to let the objects all do the same thing at same time
     // Start is called before the first frame update
     void Start()
     {
