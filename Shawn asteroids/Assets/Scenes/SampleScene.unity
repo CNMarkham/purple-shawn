@@ -229,6 +229,7 @@ GameObject:
   - component: {fileID: 595501156}
   - component: {fileID: 595501155}
   - component: {fileID: 595501160}
+  - component: {fileID: 595501161}
   m_Layer: 6
   m_Name: ship
   m_TagString: Untagged
@@ -248,6 +249,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a499353ebb958649a16e79015445bfe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  lookSpeed: 0
+  maxSpeed: 0
+  moveSpeed: 0
+  rb: {fileID: 0}
+  bulletPrefab: {fileID: 0}
 --- !u!50 &595501156
 Rigidbody2D:
   serializedVersion: 4
@@ -399,6 +405,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a499353ebb958649a16e79015445bfe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  lookSpeed: 200
+  maxSpeed: 5
+  moveSpeed: 2
+  rb: {fileID: 0}
+  bulletPrefab: {fileID: 0}
+--- !u!114 &595501161
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 595501154}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f0fe45eb58c20fb4a8eee374707604b2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &597060248
 GameObject:
   m_ObjectHideFlags: 0
@@ -412,6 +435,7 @@ GameObject:
   - component: {fileID: 597060250}
   - component: {fileID: 597060249}
   - component: {fileID: 597060253}
+  - component: {fileID: 597060254}
   m_Layer: 7
   m_Name: rock
   m_TagString: Untagged
@@ -560,6 +584,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c3fb891e5fef4f49b90a12901c31f0f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &597060254
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 597060248}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f0fe45eb58c20fb4a8eee374707604b2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &789731209
 GameObject:
   m_ObjectHideFlags: 0
@@ -605,6 +641,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ff98c04860cd724db36eaecd7f96c6c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  rockPrefab: {fileID: 0}
 --- !u!114 &789731212
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -617,6 +654,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ff98c04860cd724db36eaecd7f96c6c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  rockPrefab: {fileID: 0}
 --- !u!1 &1665453306
 GameObject:
   m_ObjectHideFlags: 0
@@ -649,6 +687,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2b554766c0114dc4db825d2326e07940, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  speed: 0
 --- !u!58 &1665453308
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -763,6 +802,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2b554766c0114dc4db825d2326e07940, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  speed: 5
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
