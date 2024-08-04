@@ -19,6 +19,10 @@ public class ship : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            Instantiate(bulletPrefab, transform.position, transform.rotation);
+        }
         if (Input.GetKey(KeyCode.LeftArrow))
         {
             transform.Rotate(Vector3.forward * Time.deltaTime * lookSpeed);
