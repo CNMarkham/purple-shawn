@@ -8,6 +8,11 @@ public class powerpellet : pellet
     {
         base.Eat();
 
-        GameObject[] ghost = GameObject.FindGameObjectsWithTag("Ghost");
+        GameObject[] ghosts = GameObject.FindGameObjectsWithTag("Ghost");
+
+        foreach(GameObject Ghost in ghosts)
+        {
+
+        }
     }
 }
