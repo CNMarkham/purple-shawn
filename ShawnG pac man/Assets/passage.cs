@@ -4,11 +4,15 @@ using UnityEngine;
 
 public class passage : MonoBehaviour
 {
-    public Transform teleportPosition;
-    private void OnTriggerEnter2D(Collider2D collision)
+    // Start is called before the first frame update
+    void Start()
     {
-        Vector3 tempPos = teleportPosition.position;
-        tempPos.z = collision.transform.position.z;
-        collision.transform.position = tempPos;
+        
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        
     }
 }
