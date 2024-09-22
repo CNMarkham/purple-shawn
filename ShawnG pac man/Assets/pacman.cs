@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class pacman : Movement
+public class Pacman : Movement
 {
     protected override void ChildUpdate()
     {
