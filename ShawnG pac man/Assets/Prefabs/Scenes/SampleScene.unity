@@ -960,9 +960,7 @@ Tilemap:
   m_TileAssetArray:
   - m_RefCount: 65
     m_Data: {fileID: 11400000, guid: 958e17708e58b51418e4a5bd8af48052, type: 2}
-  m_TileSpriteArray:
-  - m_RefCount: 0
-    m_Data: {fileID: 0}
+  m_TileSpriteArray: []
   m_TileMatrixArray:
   - m_RefCount: 65
     m_Data:
@@ -10210,8 +10208,16 @@ PrefabInstance:
       value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 2227816710360296903, guid: 6cdd51889af575c4b8ed3f06f87a07ac, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2227816710360296903, guid: 6cdd51889af575c4b8ed3f06f87a07ac, type: 3}
       propertyPath: initalDirection.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2227816710360296903, guid: 6cdd51889af575c4b8ed3f06f87a07ac, type: 3}
+      propertyPath: obstacleLayer.m_Bits
+      value: 256
       objectReference: {fileID: 0}
     - target: {fileID: 3386085701764511354, guid: 6cdd51889af575c4b8ed3f06f87a07ac, type: 3}
       propertyPath: m_Layer
@@ -10232,6 +10238,10 @@ PrefabInstance:
     - target: {fileID: 5325906622901745370, guid: 6cdd51889af575c4b8ed3f06f87a07ac, type: 3}
       propertyPath: m_Layer
       value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 5325906622901745370, guid: 6cdd51889af575c4b8ed3f06f87a07ac, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6838457598615000951, guid: 6cdd51889af575c4b8ed3f06f87a07ac, type: 3}
       propertyPath: m_Layer
