@@ -9,8 +9,16 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: -4331247737397783818, guid: 11a56a7b3e7359b4287edd5862074180, type: 3}
+      propertyPath: homeDuration
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: -4331247737397783818, guid: 11a56a7b3e7359b4287edd5862074180, type: 3}
       propertyPath: initalDirection.y
       value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 281913319705552966, guid: 11a56a7b3e7359b4287edd5862074180, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 1183978366081832661, guid: 11a56a7b3e7359b4287edd5862074180, type: 3}
       propertyPath: m_Color.b
@@ -28,17 +36,29 @@ PrefabInstance:
       propertyPath: m_Name
       value: Ghost_Clyde Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 1506438153566800363, guid: 11a56a7b3e7359b4287edd5862074180, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 4201357379562862203, guid: 11a56a7b3e7359b4287edd5862074180, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 6277994227240416063, guid: 11a56a7b3e7359b4287edd5862074180, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 6662281056914021686, guid: 11a56a7b3e7359b4287edd5862074180, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 6662281056914021686, guid: 11a56a7b3e7359b4287edd5862074180, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: -0.5
       objectReference: {fileID: 0}
     - target: {fileID: 6662281056914021686, guid: 11a56a7b3e7359b4287edd5862074180, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: -1
       objectReference: {fileID: 0}
     - target: {fileID: 6662281056914021686, guid: 11a56a7b3e7359b4287edd5862074180, type: 3}
       propertyPath: m_LocalRotation.w
@@ -67,6 +87,10 @@ PrefabInstance:
     - target: {fileID: 6662281056914021686, guid: 11a56a7b3e7359b4287edd5862074180, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8355111200273942859, guid: 11a56a7b3e7359b4287edd5862074180, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

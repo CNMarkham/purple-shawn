@@ -4,13 +4,13 @@ using UnityEngine;
 
 public class Ghost : Movement
 {
-    GameObject body;
-    GameObject eyes;
-    GameObject blue;
-    GameObject white;
-    bool frightend;
-    bool atHome;
-    float homeDuration;
+   public GameObject body;
+   public GameObject eyes;
+   public GameObject blue;
+  public  GameObject white;
+   public bool frightend;
+  public  bool atHome;
+  public  float homeDuration;
     private void OnTriggerEnter2D(Collider2D collision)
     {
         Node node = collision.GetComponent<Node>();
@@ -38,13 +38,17 @@ public class Ghost : Movement
 
     }
 
-    private void Awake()
+    private void LeaveHome()
     {
+        transform.position = new Vector3(0, 2.5f, -1f);
+        direction = new Vector2(-1, 0);
+        atHome = false;
         body.SetActive(true);
         eyes.SetActive(true);
         blue.SetActive(false);
         white.SetActive(false);
         frightend = false;
+        Invoke("LeaveHome", homeDuration);
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
