@@ -10,7 +10,8 @@ public class PlayerMovement : MonoBehaviour
     private RaycastHit2D hit;
     public float jumpforce;
     private bool jumping;
-private void ResetJumping()
+
+    private void ResetJumping()
     {
         jumping = false;
     }
@@ -31,7 +32,11 @@ private void ResetJumping()
 
         Jump();
         FlipDirection();
+        ChangeAnimations();
+
+
     }
+    
     private void Jump()
     {
         hit = Physics2D.CircleCast(rb.position, 0.25f, Vector2.down, 0.375f, LayerMask.GetMask("Default"));
@@ -44,7 +49,7 @@ private void ResetJumping()
             jumping = true;
             Invoke("ResetJumping", 0.5f);
 
-     
+
         }
         if (jumping && Input.GetKey(KeyCode.Space))
         {
@@ -58,6 +63,16 @@ private void ResetJumping()
         foreach (SpriteRenderer sprite in GetComponentsInChildren<SpriteRenderer>())
         {
             sprite.flipX = rb.velocity.x < 0;
+        }
+    }
+
+    private void ChangeAnimations()
+    {
+        foreach (Animator animator in GetComponentsInChildren<Animator>())
+        {
+            animator.SetFloat("velocityX", rb.velocity.x);
+            animator.SetFloat("horizontalInput", Input.GetAxis("Horizontal"));
+            animator.SetBool("inAir", hit.collider == null || jumping);
         }
     }
 
