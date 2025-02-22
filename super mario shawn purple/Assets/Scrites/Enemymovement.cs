@@ -5,15 +5,12 @@ using UnityEngine;
 public class Enemymovement : MonoBehaviour
 {
     public float speed = 2f;
-        public Vector2 direction = Vector2.left;
+    public Vector2 direction = Vector2.left;
     private Rigidbody2D rb;
-<<<<<<< Updated upstream:super mario shawn purple/Assets/Scrites/Enemymovement.cs
-=======
     public float moveSpeed;
 
     private RaycastHit2D hit;
     public float jumpForce;
->>>>>>> Stashed changes:super mario shawn purple/Assets/PlayerMovement.cs
     // Start is called before the first frame update
     void Start()
     {
@@ -26,13 +23,10 @@ public class Enemymovement : MonoBehaviour
         
     }
 
-<<<<<<< Updated upstream:super mario shawn purple/Assets/Scrites/Enemymovement.cs
     private void OnBecameVisible()
     {
         rb.velocity = direction * speed;
-=======
-        rb.AddForce(Vector2.right * horizontal * moveSpeed * Time.deltaTime);
-
+        rb.AddForce(Vector2.right * direction * moveSpeed * Time.deltaTime);
         Jump();
     }
     private void Jump()
@@ -45,6 +39,5 @@ public class Enemymovement : MonoBehaviour
             rb.velocity = velocity;
         }
 
->>>>>>> Stashed changes:super mario shawn purple/Assets/PlayerMovement.cs
     }
 }
