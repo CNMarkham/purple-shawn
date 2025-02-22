@@ -96,11 +96,7 @@ GameObject:
   - component: {fileID: 1857138335903038664}
   - component: {fileID: 6598982087512203444}
 <<<<<<< Updated upstream
-<<<<<<< Updated upstream
   - component: {fileID: 4201567692486738944}
-=======
-  - component: {fileID: 1851756557357636666}
->>>>>>> Stashed changes
 =======
   - component: {fileID: 1851756557357636666}
 >>>>>>> Stashed changes
@@ -191,11 +187,7 @@ CapsuleCollider2D:
   m_Size: {x: 1, y: 1}
   m_Direction: 0
 <<<<<<< Updated upstream
-<<<<<<< Updated upstream
 --- !u!114 &4201567692486738944
-=======
---- !u!114 &1851756557357636666
->>>>>>> Stashed changes
 =======
 --- !u!114 &1851756557357636666
 >>>>>>> Stashed changes
@@ -212,11 +204,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 2000
 <<<<<<< Updated upstream
-<<<<<<< Updated upstream
   jumpforce: 9
-=======
-  jumpForce: 0
->>>>>>> Stashed changes
 =======
   jumpForce: 0
 >>>>>>> Stashed changes
